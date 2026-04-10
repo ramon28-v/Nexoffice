@@ -1,0 +1,52 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <style>
+                @page { size: letter; margin: 10mm; }
+                body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; padding: 0; }
+                .no-print { text-align: center; padding: 15px; background: #1e222d; }
+                .btn-print { background: #22c55e; color: white; padding: 10px 30px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+                .invoice-box { 
+                    max-width: 800px; margin: 20px auto; background: white; padding: 50px; 
+                    min-height: 950px; display: flex; flex-direction: column; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                }
+                .header { display: flex; justify-content: space-between; border-bottom: 4px solid #7dd3fc; padding-bottom: 15px; }
+                .logo-t { font-size: 30px; font-weight: bold; color: #1e222d; margin: 0; }
+                .info-s { margin-top: 30px; display: flex; justify-content: space-between; }
+                .table-s { margin-top: 40px; flex-grow: 1; }
+                table { width: 100%; border-collapse: collapse; }
+                th { background: #f8fafc; padding: 12px; text-align: left; border-bottom: 2px solid #e2e8f0; color: #64748b; }
+                td { padding: 12px; border-bottom: 1px solid #f1f5f9; }
+                .bottom-s { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 40px; padding-top: 20px; border-top: 2px solid #1e222d; }
+                .qr-s { text-align: center; font-size: 10px; color: #94a3b8; }
+                .total-s { text-align: right; font-size: 26px; font-weight: bold; color: #1e222d; }
+                @media print { .no-print { display: none; } .invoice-box { box-shadow: none; margin: 0; min-height: auto; } }
+            </style>
+        </head>
+        <body>
+            <div class="no-print"><button class="btn-print" onclick="window.print()">🖨️ IMPRIMIR FACTURA FISICA</button></div>
+            <div class="invoice-box">
+                <div class="header">
+                    <div><p class="logo-t">VENTURA TECH GROUP</p><span style="color:#64748b;">NexOffice Solutions IT</span></div>
+                    <div style="text-align:right;"><h2>FACTURA ELECTRÓNICA</h2><p>ID: 2604062203<br>06/04/2026 22:03</p></div>
+                </div>
+                <div class="info-s">
+                    <div><strong>CLIENTE:</strong> 14<br>RNC: 14<br>DIR: 14</div>
+                </div>
+                <div class="table-s">
+                    <table>
+                        <thead><tr><th>Descripción</th><th style="text-align:center;">Cant.</th><th style="text-align:right;">Unitario</th><th style="text-align:right;">Total</th></tr></thead>
+                        <tbody><tr><td>Canon Láser MF-445DW</td><td style='text-align:center;'>1</td><td style='text-align:right;'>RD$ 15,990.00</td><td style='text-align:right;'>RD$ 15,990.00</td></tr></tbody>
+                    </table>
+                </div>
+                <div class="bottom-s">
+                    <div class="qr-s"><img src="file:///C:\Users\Yoleimi Alexa\OneDrive\Escritorio\Proyecto_paginaweb\temp_qr.png" width="120"><br>AUTENTICIDAD DIGITAL VTG</div>
+                    <div class="total-s"><span style="font-size:14px; color:#64748b;">TOTAL A PAGAR</span><br>RD$ 15,990.00</div>
+                </div>
+                <div style="text-align:center; margin-top:50px; font-size:11px; color:#cbd5e1;">Gracias por preferir a Ventura Tech Group para sus soluciones de oficina.</div>
+            </div>
+        </body>
+        </html>
+        

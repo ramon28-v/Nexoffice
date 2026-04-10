@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización | NexOffice Ventura Group</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para el formulario */
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: var(--gray);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid var(--accent);
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: #1a1e26;
+            border: 1px solid #333;
+            color: white;
+            border-radius: 5px;
+        }
+        .btn-send {
+            background: var(--accent);
+            color: var(--dark);
+            border: none;
+            padding: 15px;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Orbitron';
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Nex<span>Office</span></div>
+        <ul class="menu">
+            <li><a href="index.html">Volver al Inicio</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <h2 style="font-family: 'Orbitron'; color: var(--accent); margin-bottom: 20px;">Solicitud de Cotización</h2>
+        <p style="margin-bottom: 30px;">Complete los datos y un asesor de <strong>Ventura Tech Group</strong> le contactará en breve.</p>
+        
+        <form action="#">
+            <label>Nombre Completo</label>
+            <input type="text" placeholder="Ej. Juan Ventura" required>
+            
+            <label>Correo Corporativo</label>
+            <input type="email" placeholder="correo@empresa.com" required>
+
+            <label>Equipo de Interés</label>
+            <select id="equipo-seleccionado">
+    <option value="">Seleccione el modelo Canon...</option>
+    <option value="MF-445DW">Canon Láser MF-445DW</option>
+    <option value="MF-424DW">Canon Láser MF-424DW</option>
+    <option value="MF-632CDW">Canon Color MF-632CDW</option>
+    <option value="GX7021">Canon MAXIFY GX7021 (MegaTank)</option>
+</select>
+
+            <label>Mensaje Adicional</label>
+            <textarea rows="4" placeholder="Cuéntenos sus necesidades..."></textarea>
+
+            <button type="submit" class="btn-send">ENVIAR SOLICITUD</button>
+        </form>
+    </div>
+
+    <footer style="text-align: center; padding: 20px;">
+        <p>&copy; NexOffice | Ventura Tech Group</p>
+    </footer>
+</body>
+</html>

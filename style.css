@@ -423,3 +423,16 @@ html {
 
         #bot-input { flex: 1; border: none; outline: none; font-size: 13px; }
         #bot-send { background: none; border: none; color: #1e222d; cursor: pointer; font-size: 18px; }
+        .mapa-contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 2px solid #238636; /* Color verde de tu marca */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+iframe {
+    display: block;
+}
